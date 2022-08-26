@@ -5,10 +5,11 @@ html {
 
 body {
     display: flex;
-    width: 100%;
+    min-width: 1200px;
     height: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0px;
+    justify-content: center;
 }
 
 #sidebar {
@@ -34,9 +35,15 @@ body {
 
 #search {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 30px;
+}
+
+#search>*{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 #searchbar {
@@ -44,6 +51,7 @@ body {
     border: 0px;
     background-color: rgb(222, 229, 247);
     height: 25px;
+    width: 500px;
 }
 
 #header {
@@ -58,7 +66,7 @@ body {
 }
 
 .user_avatar {
-    height: 50px;
+    height: 35px;
     width: auto;
     border-radius: 50%;
 }
@@ -73,6 +81,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
 }
 
 #header .buttons  {
@@ -82,7 +91,7 @@ body {
 
 #article {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: rgb(222, 229, 247);
     gap: 15px;
@@ -109,7 +118,7 @@ body {
     background-color: white;
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
-    width: max(250px, 25%);
+    width: minmax(300px, 1fr);
     padding: 0px 10px;
 }
 
@@ -131,7 +140,7 @@ body {
     background-color: white;
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
-    width: max(250px, 25%);
+    width: minmax(300px, 1fr);
     padding: 0px 10px;
 
 }
@@ -146,7 +155,7 @@ body {
 
 .card {
     height: 200px;
-    width: 300px;
+    width: minmax(300px, 1fr);
     border: 1px solid rgb(192, 192, 192);
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
