@@ -104,12 +104,21 @@ body {
     grid-row: 1/2;
 }
 
-#announcement-container > #announcments{
+#announcement-container > #announcements{
     border: 1px solid rgb(192, 192, 192);
     background-color: white;
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
     width: max(250px, 25%);
+    padding: 0px 10px;
+}
+
+.announce::after{
+    content: "";
+    background-color: rgb(221, 221, 221);
+    width: max(250px, 25%);
+    height: 1px;
+    display: block;
 }
 
 #trending {
@@ -123,7 +132,16 @@ body {
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
     width: max(250px, 25%);
+    padding: 0px 10px;
 
+}
+
+.trends::after {
+    content: "";
+    background-color: rgb(221, 221, 221);
+    width: max(250px, 25%);
+    height: 1px;
+    display: block;
 }
 
 .card {
