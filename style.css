@@ -10,7 +10,7 @@ body {
 }
 
 #sidebar {
-    background-color: rgb(93, 173, 226);
+    background-color: rgb(72, 145, 253);
     color: white;
     border: 1px solid black;
     width: 200px;
@@ -44,6 +44,7 @@ body {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: rgb(213, 219, 233);
 }
 
 #article > #projects {
@@ -55,20 +56,31 @@ body {
     gap: 15px;
 }
 
-#announcement_container {
+#announcement-container {
     grid-column: 2/3;
     grid-row: 1/2;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: white;
+    box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
+    border-radius: 10px;
 }
 
 #trending {
     grid-column: 2/3;
     grid-row: 2/3;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: white;
+    box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
+    border-radius: 10px;
 }
 
 .card {
     height: 200px;
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: white;
+    box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
+    border-radius: 10px;
 }
 
 li {
@@ -82,4 +94,11 @@ li {
 
 .filter-white {
     filter: invert(99%) sepia(93%) saturate(2%) hue-rotate(65deg) brightness(105%) contrast(100%);;
+}
+
+button {
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(72, 145, 253);
+    color: white;
 }
