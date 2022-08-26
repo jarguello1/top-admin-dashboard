@@ -7,17 +7,20 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #sidebar {
     background-color: rgb(72, 145, 253);
     color: white;
-    border: 1px solid black;
     width: 200px;
     font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    padding: 15px;
+    padding-right: 35px;
 }
 
 #logo {
@@ -26,13 +29,18 @@ body {
 }
 
 #container {
-    border: 1px solid blue;
     flex: auto;
 }
 
 #search {
     display: flex;
     justify-content: space-around;
+}
+
+#searchbar {
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(222, 229, 247);
 }
 
 #header {
@@ -44,7 +52,10 @@ body {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(213, 219, 233);
+    background-color: rgb(222, 229, 247);
+    gap: 15px;
+    padding: 20px 32px;
+    padding-bottom: 40px;
 }
 
 #article > #projects {
@@ -59,19 +70,28 @@ body {
 #announcement-container {
     grid-column: 2/3;
     grid-row: 1/2;
+}
+
+#announcement-container > #announcments{
     border: 1px solid rgb(192, 192, 192);
     background-color: white;
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
+    width: max(250px, 25%);
 }
 
 #trending {
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+#trending > #trends {
     border: 1px solid rgb(192, 192, 192);
     background-color: white;
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
     border-radius: 10px;
+    width: max(250px, 25%);
+
 }
 
 .card {
@@ -101,4 +121,7 @@ button {
     border: 0px;
     background-color: rgb(72, 145, 253);
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
 }
