@@ -1,1 +1,13 @@
+body {
+    display: flex;
+}
 
+#sidebar {
+    border: 1px solid black;
+    width: 200px;
+}
+
+#container {
+    border: 1px solid blue;
+    flex: auto;
+}
