@@ -60,3 +60,10 @@ body {
 li {
     list-style-type: none;
 }
+
+li img {
+}
+
+.filter-white {
+    filter: invert(99%) sepia(93%) saturate(2%) hue-rotate(65deg) brightness(105%) contrast(100%);;
+}
