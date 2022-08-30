@@ -38,6 +38,15 @@ body {
     gap: 15px;
 }
 
+#sidebar ul li {
+    height: 2rem;
+    cursor: pointer;
+  }
+  
+#sidebar ul li p:hover{
+  border-bottom: 2px solid white;
+}
+
 #logo {
     align-self: center;
     padding-top: 15px;
@@ -225,3 +234,6 @@ button {
     padding: 8px 20px;
 }
 
+.action-img {
+    cursor: pointer;
+}
