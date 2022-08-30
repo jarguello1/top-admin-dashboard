@@ -127,7 +127,7 @@ body {
     grid-row: 1/3;
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 300px);
     gap: 15px;
 }
 
@@ -187,7 +187,7 @@ body {
 
 
 .card {
-    height: minmax(200px, 1fr);
+    height: minmax(300px, 1fr);
     width: minmax(300px, 1fr);
     border: 1px solid rgb(192, 192, 192);
     box-shadow: 0px 5px rgba(192, 192, 192, 0.164);
@@ -196,12 +196,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    align-items: center;
 }
 
 .card>* {
-    padding: 0px 20px;
+    padding: 0px 45px;
     margin: 10px 0px;
+}
+
+.card a img {
+    width: 340px;
+    height: 142px;
 }
 
 .card>.icons {
